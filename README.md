@@ -9,7 +9,7 @@ mkdir $local_folder
 ```bash
 sudo systemsetup -setremotelogin on
 ```
-- Note: `$remote_host` should be accessible from outside, thus permit SSH connections in router settings.
+- Note: It should be accessible from outside, thus permit SSH connections in router settings.
 - Mount the remote folder:
 ```bash
 sshfs $remote_user@$remote_host:$remote_folder $local_folder
