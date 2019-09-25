@@ -11,6 +11,7 @@ mkdir $local_folder
 ```bash
 sshfs $remote_user@$remote_host:$remote_folder $local_folder
 ```
+- Note: `$remote_host` should be accessible from outside, thus permit SSH connections in router settings.
 - Then to unmount the folder:
 ```bash
 umount $local_folder
