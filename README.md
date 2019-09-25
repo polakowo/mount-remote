@@ -1,6 +1,6 @@
 # mount-remote
 
-To mount a remote machine as a folder:
+To mount a remote Mac as a folder:
 - Install [FUSE for macOS](https://osxfuse.github.io)
 - Install [SSHFS](https://osxfuse.github.io)
 - Create a folder which will point to the remote host:
