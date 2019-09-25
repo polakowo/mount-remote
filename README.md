@@ -5,11 +5,15 @@ To mount a remote Mac as a folder:
 ```bash
 mkdir $local_folder
 ```
+- Enable SSH on a remote Mac:
+```bash
+sudo systemsetup -setremotelogin on
+```
+- Note: `$remote_host` should be accessible from outside, thus permit SSH connections in router settings.
 - Mount the remote folder:
 ```bash
 sshfs $remote_user@$remote_host:$remote_folder $local_folder
 ```
-- Note: `$remote_host` should be accessible from outside, thus permit SSH connections in router settings.
 - Then to unmount the folder:
 ```bash
 umount $local_folder
